@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2019-06-27T22:26:25.403Z",
+    "end": "2019-06-27T22:26:26.292Z",
+    "duration": 889,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "a53af946-f138-46c9-9494-ff39b5d0990a",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "30aa084d-b266-4f2b-833c-4bd9ce3e327f",
+        "title": "Simple example of conctract test with Joi Assert",
+        "fullFile": "/home/diego/Downloads/base-contract-test/test/contracts/requests/example_request.js",
+        "file": "/test/contracts/requests/example_request.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "Validando response com joiAssert",
+            "fullTitle": "Simple example of conctract test with Joi Assert Validando response com joiAssert",
+            "timedOut": false,
+            "duration": 879,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "request('https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/').get('by-radius?radius=50&lng=-157.895277&lat=21.265600').set('X-RapidAPI-Host', 'cometari-airportsfinder-v1.p.rapidapi.com').set('X-RapidAPI-Key', '8d3a50857amshcf16e42fbc83c12p1646ebjsn20121bd14040').expect('Content-Type', /json/).end(function (err, res) {\n    expect(res.status).to.be.eql(200);\n    joiAssert(res.body, SchemaAirportSearchRadius);\n    done(err);\n});",
+            "err": {},
+            "isRoot": false,
+            "uuid": "5d86b255-b14e-4f16-a174-63c2de94e5f5",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "5d86b255-b14e-4f16-a174-63c2de94e5f5"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 879,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 20000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 20000
+  },
+  "copyrightYear": 2019
+}

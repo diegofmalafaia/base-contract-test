@@ -1,0 +1,33 @@
+{
+  "name": "base-contract-test",
+  "version": "1.0.0",
+  "description": "Base project for contract tests with joi assert",
+  "main": "index.js",
+  "scripts": {
+    "contracts": "NODE_ENV=test mocha --opts test/contracts/mocha.opts test/contracts/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diegofmalafaia/base-contract-test.git"
+  },
+  "author": "Diego Fernandes Malafaia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diegofmalafaia/base-contract-test.git/issues"
+  },
+  "homepage": "https://github.com/diegofmalafaia/base-contract-test.git#readme",
+  
+  "devDependencies": {
+    "joi": "^14.3.1",
+    "joi-assert": "0.0.3",
+    "mocha": "^6.0.2",
+    "mochawesome": "^3.1.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  }
+}
