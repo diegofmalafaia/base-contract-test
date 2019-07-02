@@ -11,7 +11,7 @@ const {
 // const URL = '';
 // const PATH = '';
 
-describe('Simple example of conctract test with Joi Assert', () => {     
+describe('Examples of contract tests using Joi Assert and Mocha', () => {     
     it('Example of get request', function (done) {
         request('https://cometari-airportsfinder-v1.p.rapidapi.com/api/airports/')
           .get('by-radius?radius=50&lng=-157.895277&lat=21.265600')
@@ -34,7 +34,6 @@ describe('Simple example of conctract test with Joi Assert', () => {
           .end(function (err, res) {
             expect(res.status).to.be.eql(200);
             joiAssert(res.body, SchemaSearchTv);
-            console.log(res.body)
             done(err);
           })
       });

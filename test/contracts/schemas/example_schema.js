@@ -68,11 +68,6 @@ const SchemaSearchTv = Joi.object().keys({
     }),
 });
 
-
-
-
-
-
 module.exports = {
     SchemaAirportSearchRadius,
     SchemaSearchTv
